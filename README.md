@@ -111,3 +111,9 @@ print(df['label'].value_counts())
 df['perplexity'] = df['Computed_metrics'].apply(lambda x: x['perplexity'])
 print(df.groupby('difficulty')['perplexity'].mean())
 ```
+### 💡 Example Structure
+The diagram below illustrates the data structure and how meta-scores augment each response:
+
+![image](./img/example.png)
+
+*Figure: Meta-score augmented data structure with CLAWS metrics, computed features, and LLM evaluator results.*
